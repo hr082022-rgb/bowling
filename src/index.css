@@ -1,0 +1,374 @@
+/* ===== 귀여운 폰트 적용 (Google Fonts) ===== */
+@import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
+
+* {
+  font-family: "Jua", sans-serif;
+}
+
+/* ===== 공통 배경 및 기본 설정 ===== */
+body {
+  margin: 0;
+  background: #f7f7ff;
+}
+
+/* ===== 헤더 & 상단 네비게이션 ===== */
+header {
+  background: #ffffff;
+  color: #333;
+  padding: 16px 24px;
+  border-bottom: 3px solid #6ab7ff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 26px;
+}
+
+header nav {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* 네비 링크 */
+.nav-link {
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  color: #1e70c9;
+  font-size: 16px;
+  transition: 0.2s ease;
+}
+
+.nav-link:hover {
+  background: #e4f0ff;
+}
+
+.nav-link-active {
+  background: #1e70c9;
+  color: #ffffff;
+  border-color: #1e70c9;
+}
+
+.nav-user {
+  font-size: 14px;
+  margin-right: 4px;
+}
+
+.nav-btn {
+  padding: 6px 14px;
+}
+
+/* ===== 기본 레이아웃 ===== */
+main {
+  padding: 24px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+section {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 28px;
+  border: 1px solid #e3e7ef;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+  color: #1e70c9;
+  margin-top: 0;
+  font-size: 24px;
+}
+
+h3 {
+  color: #4a4a4a;
+  font-size: 20px;
+}
+
+/* ===== 상품 리스트 ===== */
+ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+li {
+  background: #ffffff;
+  color: #333;
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #dce3ed;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+li img {
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  background: #f1f4fb;
+  padding: 8px;
+}
+
+/* ===== 버튼 공통 (둥글고 귀여운 스타일) ===== */
+button {
+  padding: 10px 18px;
+  background: #ff7f50;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 15px;
+  transition: 0.15s;
+}
+
+button:hover {
+  background: #e56e42;
+}
+
+button:active {
+  background: #cc6239;
+}
+
+/* 점수 입력 */
+input[type="number"] {
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  width: 60px;
+  text-align: center;
+  background: #ffffff;
+}
+
+/* ===== 로그인 / 회원가입 ===== */
+.auth-page {
+  max-width: 420px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e3e7ef;
+}
+
+.auth-page h2 {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.auth-page p {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #666;
+  font-size: 14px;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.auth-form input {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #ccd3e0;
+  background: #ffffff;
+}
+
+.auth-form input:focus {
+  outline: none;
+  border-color: #1e70c9;
+  box-shadow: 0 0 0 2px rgba(30, 112, 201, 0.15);
+}
+
+.auth-form button {
+  width: 100%;
+  margin-top: 8px;
+}
+
+/* ===== 링크 버튼 스타일 (보러가기 / 자세히보기 등) ===== */
+a,
+.link-btn {
+  text-decoration: none;
+  color: #ff7f50;
+  font-weight: 600;
+  border: 1px solid #ff7f50;
+  padding: 6px 12px;
+  border-radius: 999px;
+  display: inline-block;
+  transition: 0.2s ease;
+  font-size: 14px;
+}
+
+a:hover,
+.link-btn:hover {
+  background: #ff7f50;
+  color: white;
+}
+
+a:active,
+.link-btn:active {
+  background: #cc6239;
+  color: #ffffff;
+}
+
+a:visited,
+a:link {
+  text-decoration: none;
+}
+
+/* ===== 상품 상세 페이지 ===== */
+.product-page {
+  max-width: 1100px;
+  margin: 40px auto;
+}
+
+.product-main {
+  display: flex;
+  gap: 32px;
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e3e7ef;
+}
+
+.product-left {
+  display: flex;
+  gap: 12px;
+}
+
+.product-thumbs {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.product-thumbs img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  background: #f1f4fb;
+  border-radius: 12px;
+}
+
+.product-big img {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  background: #f1f4fb;
+  border-radius: 16px;
+}
+
+.product-info {
+  flex: 1;
+}
+
+.product-desc {
+  margin-top: 12px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.product-price {
+  margin-top: 16px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.product-buy {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.product-buy span {
+  min-width: 22px;
+  text-align: center;
+}
+
+/* ===== 폼 에러 메세지 (항상 빨간색) ===== */
+p.error-text {
+  color: #e53935 !important;
+  font-size: 12px;
+  margin: 4px 0 0;
+  text-align: left;
+}
+
+/* ===== 장바구니 안내 팝업 ===== */
+.cart-popup {
+  position: fixed;
+  left: 50%;
+  bottom: 16px;
+  transform: translate(-50%, 0);
+  background: #ffffff;
+  padding: 16px 24px;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  border: 1px solid #e3e7ef;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  animation: cartSlideUp 0.3s ease-out;
+  z-index: 1000;
+}
+
+.cart-popup p {
+  margin: 0 0 4px;
+  font-size: 14px;
+}
+
+.cart-popup-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.cart-popup-buttons button {
+  margin-top: 0;
+  padding: 8px 16px;
+  font-size: 13px;
+}
+
+/* 팝업 올라오는 애니메이션 */
+@keyframes cartSlideUp {
+  from {
+    transform: translate(-50%, 120%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, 0);
+    opacity: 1;
+  }
+}
+/* 헤더 중앙 검색창 */
+.header-search {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.header-search input {
+  width: 100%;
+  max-width: 260px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid #ccd3e0;
+  font-size: 14px;
+}
