@@ -1,16 +1,26 @@
-# React + Vite
+# HONOR(볼링 쇼핑몰 + 점수 계산기)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- React로 쇼핑/장바구니/회원 기능/점수계산 기능을 구현한 웹 서비스 개발
+  -
+- 쇼핑기능
+  - 카테고리별 상품 출력 (볼링공,유니폼,신발,가방,보조용품)
+  - 상품 검색(상단 헤더 검색창에서 검색 가능)
+  - 상품 상세 페이지(이미지,설명,옵션 선택 - 무게/사이즈/수량 선택)
+- 옵션기능
+  - 볼링공 무게선택
+  - 유니폼 사이즈 선택
+  - 신발 사이즈 선택
+- 장바구니 기능
+  - 옵션 포함 담기(무게 사이즈 저장)
+  - 수량 증가 감소
+  - 중복 담기 방지
+  - 총 금액 계산
+- 회원 기능
+  - 회원 가입 (아이디,닉네임,비밀번호,비밀번호 확인,이메일,주소)
+  - 로그인 (필수검증 + 상태저장)
+  - 로그아웃(홈 화면으로 이동)
+- 점수 계산기
+  - 10프레임 점수 자동 계산
+  - 아래 목록에 계속 기록 저장
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+배포()
