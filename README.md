@@ -22,4 +22,4 @@
   - 10프레임 점수 자동 계산
   - 아래 목록에 계속 기록 저장
 
-배포(https://github.com/hr082022-rgb/bowling.git)
+배포(https://hr082022-rgb.github.io/bowling/)
